@@ -1,0 +1,21 @@
+{
+  "name": "learn-claude-code-agents-ts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone TypeScript runtime/tooling for agents/*.ts scripts",
+  "scripts": {
+    "dev": "bun run src/s_full.ts",
+    "start": "node dist/src/s_full.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.53.0",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
